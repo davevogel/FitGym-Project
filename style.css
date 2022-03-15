@@ -75,6 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .showcase::before {
@@ -120,6 +121,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    overflow: hidden;
 }
 
 .home-content::before {
@@ -166,6 +168,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
+    overflow: hidden;
 }
 
 .trainer-section::before {
@@ -222,6 +225,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
+    overflow: hidden;
 }
 
 .home-footer::before {
@@ -251,6 +255,14 @@ body {
     .home-content {
         flex-direction: column;
     }
+}
 
+@media(max-width:680px) {
+    .main-nav .nav-container {
+        flex-direction: column;
+    }
 
+    .showcase * {
+        letter-spacing: 1.2rem;
+    }
 }
